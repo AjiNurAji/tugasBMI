@@ -5,12 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berat Badan Ideal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
     <section class="container">
-      
+      <div class="form-box">
+        <h3 class="title">Cek Berat <span class="yellow" > Badan Ideal</span></h3>
+        <div class="form-group">
+          <ul>
+            <li>
+              <div class="form-input">
+                <label for="name">Nama anda </label>
+                <input type="text" name="name" id="name" class="input-box">
+              </div>
+
+              <div class="form-input">
+                <label for="jk">Jenis kelamin </label>
+                <select name="jk" id="jenis_kelamin" class="input-box">
+                  <option disabled selected>Pilih jenis kelamin</option>
+                  <option value="Pria">Laki-laki</option>
+                  <option value="Wanita">Perempuan</option>
+                </select>
+              </div>
+            </li>
+
+            <li>
+              <div class="form-input">
+                <label for="bb">Berat badan</label>
+                <input type="number" name="bb" id="berat_badan" class="input-box">
+              </div>
+              <div class="form-input">
+                <label for="tb">Tinggi badan </label>
+                <input type="number" name="tb" id="tinggi_badan" class="input-box">
+              </div>
+            </li>
+            <li>
+              <div class="btn-submit">
+                <button class="btn" onClick="cek()">Cek</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <h3 class="title">Hasil</h3>
+        <div class="input-box output" id="output">
+          <ul>
+            <li>Nama anda : <span class="yellow" id="output-nama"></span></li>
+            <li>Jenis kelamin : <span class="yellow" id="output-jk"></span></li>
+            <li>Tinggi badan : <span class="yellow" id="output-tb"></span></li>
+            <li>Berat badan ideal anda : <span class="yellow" id="output-bbi"></span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <script src="index.js"></script>
