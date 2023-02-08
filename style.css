@@ -1,0 +1,130 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLE */
+:root {
+  --dark: #212529;
+  --grey: #373a3e;
+  --yellow: #f1c40f;
+  --white: #fbfbfa;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 5rem;
+}
+
+.form-box {
+  height: auto;
+  width: 100%;
+  align-items: center;
+  background-color: var(--grey);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.form-group ul li {
+  display: flex;
+}
+
+.form-group .form-input {
+  width: 100%;
+  margin: 1rem;
+}
+
+label {
+  color: #999;
+  margin-bottom: .5rem;
+}
+
+.input-box.output,
+.input-box {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  border: 2px solid #999;
+  background: var(--dark);
+  outline: none;
+  color: var(--white);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.input-box:focus {
+  border: 2px solid var(--yellow);
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.btn {
+  background-color: #999;
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--yellow);
+  padding: 7px 20px;
+}
+
+.input-box.output {
+  display: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.input-box.output.active {
+  display: block;
+}
